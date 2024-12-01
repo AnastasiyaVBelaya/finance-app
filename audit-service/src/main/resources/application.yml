@@ -1,0 +1,18 @@
+spring:
+app:
+  jwt:
+    secret: NDQ1ZjAzNjQtMzViZi00MDRjLTljZjQtNjNjYWIyZTU5ZDYw
+    issuer: ITAcademy
+
+
+audit-service:
+  base-url: http://localhost:8080
+  urls:
+    user: /user/currency
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000   # Время ожидания подключения (мс)
+        readTimeout: 10000

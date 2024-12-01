@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: classifier-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/classifier_service
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 20

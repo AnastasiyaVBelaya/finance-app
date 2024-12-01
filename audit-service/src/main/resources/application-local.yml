@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: audit-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/audit_service
+    username: postgres
+    password: postgres
+    hikari:
+      maximum-pool-size: 20
+
+server:
+  port: 8181

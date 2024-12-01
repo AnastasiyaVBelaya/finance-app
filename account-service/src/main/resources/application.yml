@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: account-service
+app:
+  jwt:
+    secret: NDQ1ZjAzNjQtMzViZi00MDRjLTljZjQtNjNjYWIyZTU5ZDYw
+
+classifier-service:
+  base-url: http://localhost:8080
+  urls:
+    currency: /classifier/currency
+    category: /classifier/operation/category
+
+feign:
+  client:
+    config:
+      default:
+        connectTimeout: 5000
+        readTimeout: 10000
+
+
+logging:
+  level:
+    org.springframework: DEBUG
+    com.your.package: DEBUG

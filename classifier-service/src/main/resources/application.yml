@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: local #-Dspring.profiles.active=local
+
+app:
+  jwt:
+    secret: NDQ1ZjAzNjQtMzViZi00MDRjLTljZjQtNjNjYWIyZTU5ZDYw
+    issuer: ITAcademy
+
+currency:
+  service:
+    url: http://localhost:8080/api

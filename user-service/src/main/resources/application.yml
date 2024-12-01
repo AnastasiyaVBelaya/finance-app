@@ -1,0 +1,28 @@
+spring:
+
+  mail:
+    host: smtp.mail.ru
+    port: 587
+    username: testirovanie.1970@mail.ru
+    password: 6HBkEdhZPZj3808c7FGj
+    from: testirovanie.1970@mail.ru
+    protocol: smtp
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+async:
+  pool:
+    core-size: 5
+    max-size: 10
+    queue-capacity: 100
+
+app:
+  jwt:
+    secret: NDQ1ZjAzNjQtMzViZi00MDRjLTljZjQtNjNjYWIyZTU5ZDYw
+    issuer: ITAcademy
+
+logging:
+  level:
+    org.springframework: DEBUG
+    com.your.package: DEBUG

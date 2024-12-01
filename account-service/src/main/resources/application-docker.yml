@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: account-service
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://pg_db:5432/account_service?currentSchema=security
+    username: account_app_user
+    password: 123
+

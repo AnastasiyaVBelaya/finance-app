@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: audit-service
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://pg_db:5432/audit-service?currentSchema=security
+    username: audit_app_user
+    password: 123
